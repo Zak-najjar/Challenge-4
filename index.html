@@ -27,6 +27,7 @@
       border-radius: 10px;
       font-size: 18px;
       font-family: "Outfit";
+      z-index: 1;
     }
     .cont .img {
       width: 310px;
@@ -42,23 +43,24 @@
       z-index: 1;
     }
     .cont > .img img:last-of-type {
-      display: none;
+      visibility: hidden;
       width: 48px;
       height: 48px;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      cursor: pointer;
     }
     .cont .img:hover img:last-of-type{
-      display: block;
+      visibility: visible;
     }
     .cont .img:hover img:first-of-type {
       z-index: -1;
     }
     .cont .img:hover {
-      background-color: rgba(1,156,178,255);
       border-radius: 7px;
+      background-color: rgb(30,228,236, .3);
     }
     h1  {
       color: white;
